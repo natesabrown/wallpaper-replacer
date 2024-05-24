@@ -5,12 +5,6 @@ class ViewController: NSViewController {
 
     override func viewWillAppear() {
 
-        // This window should inhabit the device's full screen size.
-        if let mainScreen = NSScreen.main {
-            let frame = mainScreen.frame
-            self.view.window?.setFrame(frame, display: false)
-        }
-
         // Hide the top bar.
         self.view.window?.titleVisibility = .hidden
         self.view.window?.titlebarAppearsTransparent = true

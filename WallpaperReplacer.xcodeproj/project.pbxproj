@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C258F2A42C0111D900C9C3FF /* CustomWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C258F2A32C0111D900C9C3FF /* CustomWindowController.swift */; };
 		C25D1BB82C00E21E00DF67E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25D1BB72C00E21E00DF67E9 /* AppDelegate.swift */; };
 		C25D1BBA2C00E21E00DF67E9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C25D1BB92C00E21E00DF67E9 /* ViewController.swift */; };
 		C25D1BBC2C00E21F00DF67E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C25D1BBB2C00E21F00DF67E9 /* Assets.xcassets */; };
@@ -14,6 +15,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C258F2A22C0111C200C9C3FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		C258F2A32C0111D900C9C3FF /* CustomWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomWindowController.swift; sourceTree = "<group>"; };
 		C25D1BB42C00E21E00DF67E9 /* WallpaperReplacer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WallpaperReplacer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C25D1BB72C00E21E00DF67E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C25D1BB92C00E21E00DF67E9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -52,7 +55,9 @@
 		C25D1BB62C00E21E00DF67E9 /* WallpaperReplacer */ = {
 			isa = PBXGroup;
 			children = (
+				C258F2A22C0111C200C9C3FF /* Info.plist */,
 				C25D1BB72C00E21E00DF67E9 /* AppDelegate.swift */,
+				C258F2A32C0111D900C9C3FF /* CustomWindowController.swift */,
 				C25D1BB92C00E21E00DF67E9 /* ViewController.swift */,
 				C25D1BBB2C00E21F00DF67E9 /* Assets.xcassets */,
 				C25D1BBD2C00E21F00DF67E9 /* Main.storyboard */,
@@ -133,6 +138,7 @@
 			files = (
 				C25D1BBA2C00E21E00DF67E9 /* ViewController.swift in Sources */,
 				C25D1BB82C00E21E00DF67E9 /* AppDelegate.swift in Sources */,
+				C258F2A42C0111D900C9C3FF /* CustomWindowController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +286,7 @@
 				DEVELOPMENT_TEAM = 5459S5J3PY;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WallpaperReplacer/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
@@ -307,6 +314,7 @@
 				DEVELOPMENT_TEAM = 5459S5J3PY;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WallpaperReplacer/Info.plist;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
