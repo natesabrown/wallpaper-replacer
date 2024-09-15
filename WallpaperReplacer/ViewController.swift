@@ -40,20 +40,22 @@ class ViewController: NSViewController {
       self.view.addSubview(imageView.view)
       imageView.view.frame = bounds
     }
-  }
 
-  override func viewDidAppear() {
-
+    // When user plugs in a monitor, resize the image appropriately.
+    NotificationCenter.default.addObserver(
+      forName: NSApplication.didChangeScreenParametersNotification,
+      object: NSApplication.shared,
+      queue: .main
+    ) { [weak self] notification in
+      guard let self, let bounds = self.view.window?.contentView?.bounds else { return }
+      for subview in self.view.subviews {
+        subview.frame = bounds
+      }
+    }
   }
 
   override func viewDidLoad() {
     super.viewDidLoad()
-  }
-
-  override var representedObject: Any? {
-    didSet {
-      // Update the view, if already loaded.
-    }
   }
 }
 
